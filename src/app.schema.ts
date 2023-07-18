@@ -4,6 +4,9 @@ import { Document } from 'mongoose';
 @Schema()
 export class Doctor extends Document {
   @Prop()
+  image: string;
+
+  @Prop()
   fullname: string;
 
   @Prop()
