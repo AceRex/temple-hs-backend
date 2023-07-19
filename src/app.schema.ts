@@ -18,13 +18,13 @@ export class Doctor extends Document {
   @Prop()
   meetingtype: string;
 
-  @Prop(
-    raw({
-      Date: { type: Date, },
-      // time: { type: timeStamp },
-    }),
-  )
-  availableSchedule: Record<string, any>;
+  // @Prop(
+  //   raw({
+  //     Date: { type: Date, },
+  //     // time: { type: timeStamp },
+  //   }),
+  // )
+  // availableSchedule: Record<string, any>;
 
 }
 

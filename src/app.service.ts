@@ -24,4 +24,13 @@ export class AppService {
     return res;
   }
 
+  async updateDoctor(doctor: Doctor): Promise<Doctor> {
+    const res = await this.doctorModel.findOneAndUpdate(
+      { _id: doctor._id },
+      { $push: { image: doctor } },
+      { new: true },
+    );
+    return res;
+  }
+
 }

@@ -1,4 +1,4 @@
-import { Controller, Get, Body, Post, Param} from '@nestjs/common';
+import { Controller, Get, Body, Post, Param, Put} from '@nestjs/common';
 import { AppService } from './app.service';
 import { Doctor } from './app.schema';
 import { CreateDoctorDto } from './create-user.dto';
@@ -25,4 +25,15 @@ export class AppController {
   ): Promise<Doctor> {
     return this.appService.findDoctor(id);
   }
+
+  // @Put()
+  // async updateDoctor(
+  //   @Body()
+  //   doctor: CreateDoctorDto,
+  // ): Promise<Doctor> {
+  //   const updateDoc: Doctor = {
+  //     ...doctor,
+  //   };
+  //   return this.appService.updateDoctor(updateDoc);
+  // }
 }

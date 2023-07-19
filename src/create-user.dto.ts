@@ -1,12 +1,12 @@
 export class CreateDoctorDto {
-    Doctot: {
+    Doctor: {
         image: String,
         fullname: String,
         jobtitle: String,
         about: String,
         meetingtype: String,        
-      availableSchedule: {
-        date: Date,
-      },  
+      // availableSchedule: {
+      //   date: Date,
+      // },  
     }
   }
