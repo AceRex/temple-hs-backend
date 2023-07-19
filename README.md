@@ -12,3 +12,5 @@ npm run dev: to start the project
 ## Deploy on Vercel
 
 Front end deployed on vercel via this link: https://temple-hs-test.vercel.app/select-doctor
+
+This project is hosted on coedesandbox via this link: https://n9v6td-7070.csb.app/
