@@ -10,6 +10,7 @@ export class AppService {
     @InjectModel(Doctor.name) private readonly doctorModel: Model<Doctor>,
   ) {}
 
+  
   async findAll(): Promise<Doctor[]> {
     return await this.doctorModel.find();
   }

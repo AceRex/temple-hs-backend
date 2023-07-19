@@ -26,14 +26,4 @@ export class AppController {
     return this.appService.findDoctor(id);
   }
 
-  // @Put()
-  // async updateDoctor(
-  //   @Body()
-  //   doctor: CreateDoctorDto,
-  // ): Promise<Doctor> {
-  //   const updateDoc: Doctor = {
-  //     ...doctor,
-  //   };
-  //   return this.appService.updateDoctor(updateDoc);
-  // }
 }
